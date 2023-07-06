@@ -1,13 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap');
-h1 {
+body {
     color: royalblue;
 }
-strong{
-    /* currentcolor : 부모의 컬러값 상속받음 */
-    border: 5px solid currentColor;
-}
 
-h2 {
-  color: #999;
-  font-family: 'Pretendard-Regular', Verdana, sans-serif;
-}
+    /* currentcolor : 부모의 컬러값 상속받음 */
+    h1,
+    h2 {
+      font-weight: normal;
+    }
+    h1 {
+      color: inherit;
+      font-family: 'Black Han Sans', sans-serif;
+    }
+    strong {
+      border-bottom: 5px solid currentColor;
+    }
+    
+    h2 {
+      color: #999;
+      font-family: 'Bagel Fat One', cursive;
+    }
