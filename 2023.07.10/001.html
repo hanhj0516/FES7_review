@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>postcard연습</title>
+    <style>
+        body, p, h2, a {
+            margin: 0;
+        }
+        h1 {
+            font: inherit}
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+        @font-face {
+        font-family: 'Pretendard-regular';
+        src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+        font-weight: 400;
+        font-style: normal;
+        }
+        body {
+            font-family: 'pretendard-regular', sans-serif;
+            color : #29363D;
+        }
+        .card {
+            height: 348px;
+            width: 288px;
+            box-sizing: border-box;
+            box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.10);
+            border-radius: 8px;
+            margin: 20px;
+        }
+
+        .card img{
+            width: 100%;
+            aspect-ratio: 288/196;
+            object-fit: cover;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .card .text {
+            padding: 24px 16px 16px;
+        }
+
+        .text1 {
+            font-size: 16px;
+            font-weight: bold;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        .text2{
+            color: #5A6A72;
+            font-size: 12px;
+            word-break: normal;
+            margin: 16px 0;
+            overflow: hidden;
+
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            line-height: 1.6;
+            height: calc(1em * 1.6 * 2);
+        }
+
+        .text3{
+            text-decoration: underline 2px black;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+    </style>
+</head>
+<body>
+    <article class="card">
+        <img class='img1' src="./thumbnail.png" alt="">
+            <div class="text">
+            <h2 class="text1">그것을 피가 청춘을 것이다</h2>
+            <p class="text2">그들의 두손을 구하지 피고, 것이다. 봄바람을 얼마나 이것은 끓는다. 쓸쓸한 설산에서 밥을 가진 뜨고, 청춘의 이것이다. 생의 찾아 이상, 원대하고, 무엇을 구하지 있다.  </p>
+            <a href="#" class="text3">Read</a>
+            </div>
+    </article>
+    <article class="card">
+        <img class='img1' src="./thumbnail.png" alt="">
+            <div class="text">
+            <h2 class="text1">그것을 피가 청춘을 것이다</h2>
+            <p class="text2">그들의 두손을 구하지 피고, 것이다. 봄바람을 얼마나 이것은 끓는다. 쓸쓸한 설산에서 밥을 가진 뜨고, 청춘의 이것이다. 생의 찾아 이상, 원대하고, 무엇을 구하지 있다.  </p>
+            <a href="#" class="text3">Read</a>
+            </div>
+    </article>
+</body>
+</html>
