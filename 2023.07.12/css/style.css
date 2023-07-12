@@ -115,8 +115,13 @@ button:enabled {
 
     border: 2px solid #29363d;
     border-width: 2px 2px 0 0;
-    transform: translateY(-50%) rotate(45deg);
-    }
+    transform: translate(-10px, -50%) rotate(45deg);
+    transition: all 0.3s;}
+
+    .read:hover::after {
+        /* border-color: royalblue; */
+        transform: translate(0, -50%) rotate(405deg);
+      }
 
 .mid {
     padding: 0 16px 16px 16px;
@@ -134,4 +139,24 @@ button{
 
 .card-list {
     list-style: none;
+    display: flex;
+    gap: 32px 24px;
+    flex-wrap: wrap;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+.notice {
+    width: 1224px;
+    max-width: calc(100% - (30px * 2));
+    margin: 0 auto;
+}
+
+.notice h2{
+    font-size: 30px;
+    padding-bottom: 32px;
 }
