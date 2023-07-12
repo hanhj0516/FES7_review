@@ -132,3 +132,6 @@ button{
     border: none;
 }
 
+.card-list {
+    list-style: none;
+}
