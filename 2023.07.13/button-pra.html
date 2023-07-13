@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+    /* div{
+        display: flex;
+        gap: 10px;
+    }
+
+    .btn{
+        height: 32px;
+        width: 88px;
+        font-size: 12px;
+        background-color: #343f50;
+        border: 1px solid #1a202c;
+        color: #CBD5DF;
+        padding: 9px 25px;
+    }
+
+    .btn:enabled{
+        box-shadow: inset 1px 1px 0 0 #4a5568;
+    }
+
+    .btn:hover{
+    text-decoration: underline;
+    color: white;
+    }
+
+    .btn:active{
+        box-shadow: inset 1px 1px 0 0  rgb(37, 37, 37);
+    }
+
+    .btn:disabled{
+        color: #4A5568;
+        outline-color: none;
+        border: none;
+        text-decoration: none;
+    } 
+
+    .yes{
+        color: #439AFF;
+    }
+    .yes:hover{
+    text-decoration: underline;
+    color: white;
+    background-color: #439AFF;
+    border-color: #9ccaff;
+    outline-color: #439AFF;
+    }
+
+    .yes:active{
+        border-color: #2c70bd;
+    } */
+    :root {
+        --bg-color: #2D3848;
+        --main-color: #2D3848;
+        --text-color: #CBD5DF;
+        --normal-border-color: #1A202C;
+    }
+
+    .yes {
+        --bg-color: #2D3848;
+        --main-color: #439AFF;
+        --text-color: #439AFF;
+    }
+    .del {
+        --bg-color: #2D3848;
+        --main-color: #EB5757;
+        --text-color: #EB5757;
+    }
+    
+    .btn {
+        width: 88px;
+        height: 32px;
+        border-radius: 0;
+        transition: all 0.5s;
+        border-color: var(--normal-border-color);
+    }
+
+    .btn:enabled {
+        border: 2px solid var(--normal-border-color);
+        color : var(--text-color);
+        background-color: var(--bg-color);
+        box-shadow: 2px 2px 0px 0px rgba(255, 255, 255, 0.10) inset;
+        text-decoration: underline transparent;
+    }
+
+    .btn:disabled {
+        border: 2px solid var(--normal-border-color);
+        background-color: var(--main-color);
+        color : #4A5568;
+    }
+
+    .btn:enabled:hover {
+        color: white;
+        text-decoration: underline ;
+        border: 2px solid var(--main-color);
+        background-color: var(--main-color);
+    }
+
+    .btn:enabled:active {
+        box-shadow:2px 2px 0px 0px rgba(0, 0, 0, 0.20) inset;
+        border: 2px solid var(--main-color);
+    }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="btngru">
+        <button class="btn" type="button">Button</button>
+        <button class="btn" type="button" disabled>Button</button>
+        <button class="btn yes" type="button">Yes</button>
+        <button class="btn del" type="button">Del</button>
+    </div>
+</body>
+</html>
