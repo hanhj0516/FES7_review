@@ -7,11 +7,12 @@
     <title>timetable</title>
     <style>
         table {
-            width: 800px;
+            width: 100%;
             border: 3px solid black;
             display: table;
             table-layout: fixed;
             border-collapse: collapse;
+            table-layout: fixed;
         }
 
         caption {
@@ -33,6 +34,7 @@
             border: 1px solid black;
             text-align: center;
             border-collapse: collapse;
+            padding: 6px 20px;
         }
 
         tbody tr:nth-last-child(1) {
@@ -54,11 +56,11 @@
             <thead>
             <tr>
                 <th scope="col">구분</th>
-                <th rowspan="2">한국사영역</th>
+                <th scope="col" rowspan="2">한국사영역</th>
                 <th scope="col">국어영역</th>
                 <th scope="col">수학영역</th>
-                <th rowspan="2">영어영역</th>
-                <th colspan="2">탐구영역</th>
+                <th scope="col" rowspan="2">영어영역</th>
+                <th scope="colgroup"colspan="2">탐구영역</th>
                 <th scope="col" >제 2 외국어/한문 영역</th>
             </tr>
             <tr>
@@ -72,24 +74,24 @@
         </thead>
         <tbody>
             <tr>
-                <th>표준점수</th>
-                <td rowspan="2"></td>
+                <th scope="row">표준점수</th>
+                <td rowspan="2">&nbsp;</td>
                 <td>131</td>
                 <td>137</td>
-                <td rowspan="2"></td>
+                <td rowspan="2">&nbsp;</td>
                 <td>53</td>
                 <td>64</td>
-                <td rowspan="2"></td>
+                <td rowspan="2">&nbsp;</td>
             </tr>
             <tr>
-                <th>백분위</th>
+                <th scope="row">백분위</th>
                 <td>93</td>
                 <td>95</td>
                 <td>75</td>
                 <td>93</td>
             </tr>
             <tr>
-                <th>등급</th>
+                <th scope="row">등급</th>
                 <td>2</td>
                 <td>2</td>
                 <td>2</td>
