@@ -28,11 +28,17 @@
 }
 .eye{
     background-color: black;
-    height: 14px;
-    width: 14px;
+    border: 2px solid black;
+    height: 10px;
+    width: 10px;
     border-radius: 7px;
     z-index: 100;
-}
+
+    animation-name: move-eye;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+
 .lefteye{
     position: absolute;
     top:45%;
@@ -44,11 +50,30 @@
     right:25%;
 }
 
+@keyframes move-eye {
+    0%{
+    top:75%;
+    height:0px;
+    border-radius: 0 0 7px 7px;
+
+    }
+
+    100%{
+    top:45%;
+    width:10px;
+    border-radius: 7px;
+    }
+}
+
 .blusher {
     background-color: var(--pink-color);
     width: 20px;
     height: 10px;
     border-radius: 10px/5px;
+
+    animation-name: move-blu;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
 .lefhblu{
     position: absolute;
@@ -59,6 +84,19 @@
     position: absolute;
     top:60%;
     right:10%;
+}
+@keyframes move-blu {
+    0%{
+    top:80%;
+    height:0px;
+    }
+
+    100%{
+    top:60%;
+    width: 20px;
+    height: 10px;
+    border-radius: 10px/5px;
+    }
 }
 
 .mouth{
@@ -72,6 +110,25 @@
     top:55%;
     transform: translate(-50%);
     z-index: 100;
+
+    animation-name: move-mouth;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes move-mouth {
+    0%{
+    top:80%;
+    height:0px;
+    width: 0px; 
+    }
+
+    100%{
+    top:55%;
+    width: 20px;
+    height: 15px;
+    border-radius: 2px;
+    }
 }
 
 .egg-body { 
@@ -86,7 +143,28 @@
         border-radius: 15px/10px;
         border: 2px solid black;
         box-sizing: border-box;
+
+        animation-name: move-hand;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
 }
+
+@keyframes move-hand {
+    0%{
+    top:85%;
+    height:5px;
+    width: 20px;
+    }
+
+    100%{
+    top:78%;
+    width: 30px;
+    height: 20px;
+    border-radius: 15px/10px;
+    }
+}
+
+
 .lefthand{
     position: absolute;
     top:78%;
