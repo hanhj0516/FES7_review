@@ -1,0 +1,156 @@
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff')
+    format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard-Bold';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff')
+    format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+/* reset */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+h1{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    vertical-align: top;
+}
+
+:root {
+    --text-1-color: #29363D ;
+    --text-2-color : #5A6A72 ;
+    --text-3-color : #677880;
+    --bg-color : #FFFAF0 ;
+}
+
+input,
+button {
+    font : inherit;
+}
+/* css */
+body{
+    font-family: Pretendard-Regular;
+    margin: 0;
+    background-color: var(--bg-color);
+}
+
+.max-width{
+    width: 1284px;
+    max-width: calc(100% - 60px);
+    margin: auto;
+}
+
+.header{
+    background-color: white;
+}
+
+.header .max-width {
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+}
+
+.btn-join{
+    display: inline-flex;
+    height: 40px;
+    padding: 0 20px 0 52px;
+
+    align-items: center;
+    color: var(--text-2-color);
+    font-size: 14px;
+
+    background-image: url(./img/icon-join.svg);
+    background-repeat: no-repeat;
+    background-size: 32px;
+    background-position: 10px 50%;
+
+}
+
+main{
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.login {
+    margin-top: 70px;
+}
+
+.login-main{
+    width: 250px;
+    margin: auto;
+    text-align: center;
+}
+
+.login-main img{
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+    
+}
+
+.login-main strong{
+    color : #29363D;
+    font-size: 24px;
+    font-family: 'pretendard-bold';
+    box-shadow: inset 0 -0.5em 0 rgba(255, 79, 110,0.2);
+    border-bottom: 2px solid #FF4F6E;
+}
+
+.form{
+    width: 392px;
+    margin:40px auto 50px;
+}
+
+.form label {
+    display: block;
+    font-size : 14px;
+    color: var(--text-1-color);
+    margin-bottom: 8px;
+}
+
+.form input {
+    width: 100%;
+    height: 48px;
+    padding: 0;
+    border: 0;
+    border-bottom: 1px solid var(--text-3-color);
+    border-radius: 4px 4px 0 0 ;
+}
+
+.footer{
+    text-align: center;
+    color : var(--text-3-color);
+    font-size: 12px;
+}
+
+.form > div {
+    margin-bottom: 24px;
+}
+
+.form button[type='submit'] {
+    width: 100%;
+    height: 48px;
+    border: 0;
+    background-color: var(--text-1-color);
+    color:#F4F5F5;
+    font-size: 16px;
+    border-radius: 4px;
+}
