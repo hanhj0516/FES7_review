@@ -13,7 +13,6 @@ div{
     position: relative;
     height: 300px;
     width: 600px;
-
 }
 
 .heart{
@@ -21,7 +20,7 @@ div{
     top:-10%;
     z-index: 100;
     animation: heart-move 0.5s 1;
-    animation-delay: 3s;
+    animation-delay: 4s;
     transform: scale(1);
     animation-fill-mode: backwards;
     animation-timing-function: ease-in-out;
@@ -52,7 +51,7 @@ div{
     animation-name: move-eye;
     animation-duration: 5s;
     animation-iteration-count: 1;
-    animation-delay: 4s;
+    animation-delay: 5s;
     animation-fill-mode: backwards;
     animation-timing-function: ease-in-out;
   }
@@ -147,9 +146,9 @@ div{
     border-radius: 10px/5px;
 
     animation-name: move-blu;
-    animation-duration: 5s;
+    animation-duration: 1s;
     animation-iteration-count: 1;
-    animation-delay: 4s;
+    animation-delay: 6.5s;
     animation-fill-mode: backwards;
     animation-timing-function: ease-in-out;
 }
@@ -165,7 +164,7 @@ div{
 }
 @keyframes move-blu {
     0%{
-    top:80%;
+    top:65%;
     height:0px;
     }
 
@@ -192,7 +191,7 @@ div{
     animation-name: move-mouth;
     animation-duration: 5s;
     animation-iteration-count: 1;
-    animation-delay: 4s;
+    animation-delay: 5s;
     animation-fill-mode: backwards;
     animation-timing-function: ease-in-out;
 }
@@ -232,6 +231,22 @@ div{
     scale: 0.9;
 }
 
+.body-top { 
+    position: absolute;
+    top : -30%;
+    z-index: 400;
+    scale: 0.9;
+    animation: broke 1s 1;
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes broke {
+    0%{top:14%;};
+    /* 100%{top:100%;}; */
+
+}
+
 .hand{
         background-color: var(--yellow-color);
         width: 30px;
@@ -248,7 +263,7 @@ div{
     rotate: 7deg;
 
     animation-name: move-lhand;
-    animation-delay: 1s;
+    animation-delay: 2.5s;
     animation-fill-mode: backwards;
     animation-duration: 7s;
     animation-iteration-count:1;
@@ -260,7 +275,7 @@ div{
     right:20%;
     rotate: -7deg;
     animation-name: move-rhand;
-    animation-delay: 2s;
+    animation-delay: 3.5s;
     animation-fill-mode: backwards;
     animation-duration: 7s;
     animation-iteration-count:1;
@@ -312,7 +327,7 @@ div{
 .shake{
     position:absolute;
     animation: vibration 6s 1;
-    animation-delay: 3s;
+    animation-delay: 1s;
     animation-timing-function: ease-in-out;    
     transform: rotate(0deg);
     animation-fill-mode: backwards;
