@@ -19,11 +19,12 @@ div{
     position:absolute;
     top:-10%;
     z-index: 100;
-    animation: heart-move 0.5s 1;
+    animation: heart-move 0.7s 1;
     animation-delay: 4s;
     transform: scale(1);
     animation-fill-mode: backwards;
     animation-timing-function: ease-in-out;
+    transform-origin: 50% 100%;
     
 }
 
@@ -47,49 +48,87 @@ div{
     width: 10px;
     border-radius: 7px;
     z-index: 300;
-
-    animation-name: move-eye;
-    animation-duration: 5s;
-    animation-iteration-count: 1;
-    animation-delay: 5s;
-    animation-fill-mode: backwards;
-    animation-timing-function: ease-in-out;
   }
 
 .lefteye{
     position: absolute;
     top:45%;
     left:25%;
+
+    animation-name: move-lefteye;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-delay: 5s;
+    animation-fill-mode: backwards;
+    animation-timing-function: ease-in-out;
 }
 .righteye{
     position: absolute ;
     top:45%;
     right:25%;
+
+    animation-name: move-righteye;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-delay: 5s;
+    animation-fill-mode: backwards;
+    animation-timing-function: ease-in-out;
 }
-
-@keyframes move-eye {
-    0%{
-    top:75%;
-    height:0px;
-    border-radius: 0 0 7px 7px;
-    top:80%;
-    background-color:none ;
-    border: none;
+    @keyframes move-lefteye {
+        0%{
+        top:75%;
+        height:0px;
+        border-radius: 0 0 7px 7px;
+        top:80%;
+        background-color:none ;
+        border: none;
+        }
+        1% {
+        background:blank ;
+        border: 2px solid black;
+        }
+        20% {
+        top:45%;
+        width:10px;
+        height: 10px;
+        border-radius: 7px;
+        left : 25%;
+        }
+        30%{left:20%;}
+        40%{left:25%;}
+        50%{left:35%;}
+        60%{left:25%;}
     }
-    1% {
-    background:blank ;
-    border: 2px solid black;
+
+    @keyframes move-righteye {
+        0%{
+        top:75%;
+        height:0px;
+        border-radius: 0 0 7px 7px;
+        top:80%;
+        background-color:none ;
+        border: none;
+        }
+        1% {
+        background:blank ;
+        border: 2px solid black;
+        }
+        20% {
+        top:45%;
+        width:10px;
+        height: 10px;
+        border-radius: 7px;
+        right : 25%;
+        }
+        30%{right:35%;}
+        40%{right:25%;}
+        50%{right:20%;}
+        60%{right:25%;}
     }
 
-    20% {
-    top:45%;
-    width:10px;
-    height: 10px;
-    border-radius: 7px;
-    }
-}
 
-/* .star {
+
+.star {
     height: 9px;
     width: 9px;
     background-color: white;
@@ -99,22 +138,25 @@ div{
     "c d";
     z-index: 500;
     position: absolute;
+    scale: 1;
+    animation: twinkle 0.2s infinite;
+    animation-delay: 8s;
+    animation-fill-mode: backwards;
+}
+.leftstar {
     top:47.5%;
     left:26.8%;
-    scale: 1;
-    animation: twinkle 8s infinite;
-    animation-delay: 5s;
-    animation-fill-mode: both;
-    
-
+}
+.rightstar{
+    top:47.5%;
+    right:26.8%;
 }
 
 @keyframes twinkle{
-0%{scale: 0;};
-1%{scale: 1;};
-2%{scale: 0;};
-3%{scale: 1;};
-100%{scale: 1;};
+0%{scale: 0;}
+10%{scale: 100%;}
+90%{scale: 60%;}
+100%{scale: 100%;}
 }
 
 .star > div{
@@ -137,7 +179,7 @@ div{
 .d {
     grid-area: d;
     border-radius: 30px 0 0 0 ;
-} */
+}
 
 .blusher {
     background-color: var(--pink-color);
@@ -146,9 +188,9 @@ div{
     border-radius: 10px/5px;
 
     animation-name: move-blu;
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-iteration-count: 1;
-    animation-delay: 6.5s;
+    animation-delay: 8s;
     animation-fill-mode: backwards;
     animation-timing-function: ease-in-out;
 }
@@ -186,7 +228,6 @@ div{
     left:50%;
     top:55%;
     transform: translate(-50%);
-   
 
     animation-name: move-mouth;
     animation-duration: 5s;
@@ -207,17 +248,27 @@ div{
     20%{
     top:55%;
     width: 20px;
-    height: 15px;
     border-radius: 2px;
     border: 2px black solid;
+    left:50%;
     }
+    30%{left:40%;
+        width:15px;}
+    40%{left:50%;
+        width:20px;}
+    50%{left:60%;
+        width:15px;}
+    60%{left:50%;
+        height: 0px;
+        width:20px;}
+    65%{height: 15px}
 }
 
 .egg-inside{
     background-color: white;
-    width: 190px;
-    height: 55px;
-    border-radius: 100px/25px;
+    width: 210px;
+    height: 60px;
+    border-radius: 105px/30px;
     position: absolute;
     z-index: 0;
     top:53%;
@@ -228,23 +279,24 @@ div{
     position: absolute;
     top : 56%;
     z-index: 400;
-    scale: 0.9;
+    scale: 1;
 }
 
 .body-top { 
     position: absolute;
-    top : -30%;
+    top : 11%;
     z-index: 400;
-    scale: 0.9;
+    scale: 1;
     animation: broke 1s 1;
     animation-delay: 2s;
-    animation-fill-mode: backwards;
+    animation-fill-mode: forwards;
+    transform-origin: 99% 78%;
+    transform: rotate(0deg);
+    
 }
 
 @keyframes broke {
-    0%{top:14%;};
-    /* 100%{top:100%;}; */
-
+    100%{rotate : 180deg;};
 }
 
 .hand{
@@ -254,7 +306,7 @@ div{
         border-radius: 15px/10px;
         border: 2px solid black;
         box-sizing: border-box;
-        z-index: 100;
+        z-index: 400;
 }
 .lefthand{
     position: absolute;
@@ -330,6 +382,7 @@ div{
     animation-delay: 1s;
     animation-timing-function: ease-in-out;    
     transform: rotate(0deg);
+    transform-origin: 50% 100%;
     animation-fill-mode: backwards;
 }
 
