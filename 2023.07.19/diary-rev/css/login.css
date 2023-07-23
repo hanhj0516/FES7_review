@@ -148,6 +148,8 @@ button:enabled {
   background-position: 10px 50%;
   padding: 0 20px 0 46px;
   color: var(--text-2-color);
+  font-weight: bold;
+  font-size: 14px;
 }
 
 .btn-join{
@@ -155,6 +157,9 @@ button:enabled {
 }
 .btn-login{
     background-image: url(../img/icon-login.svg);
+}
+.btn-logout{
+    background-image: url(../img/icon-logout.svg);
 }
 
 button[type="submit"] {
