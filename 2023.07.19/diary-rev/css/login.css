@@ -18,9 +18,11 @@
 body,
 div,
 h1,
+h2,
+h3,
 a,
 button,
-p {
+p, {
     margin: 0;
     padding: 0;
     font-family: inherit;
@@ -37,14 +39,27 @@ a {
 }
 
 input,
-button {
+button,
+textarea {
     border: 0;
     font-family: inherit;
     background: none;
+    font-size: 16px;
 }
 
 button:enabled {
     cursor: pointer;
+  }
+
+  .a11y-hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
   }
 
 /* 테마 */
@@ -55,6 +70,7 @@ button:enabled {
   --bg-color : #FFFAF0 ;
   --bt-gray : #F4F5F5;
   --point-color : #FF4F6E ;
+  --border : #D8DDDE;
 }
 
 
@@ -85,7 +101,6 @@ button:enabled {
   max-width: 100%;
   max-width: calc(100% - 60px);
   margin: auto;
-  background-color: ;
 }
 
 .main{
@@ -169,5 +184,9 @@ button[type="submit"] {
   width: 100%;
   height: 48px;
   border-radius: 4px;
-  font-weight: 700;
+  font-weight: bold;
+}
+
+::placeholder{
+  color: var(--text-3-color);
 }
