@@ -1,0 +1,277 @@
+@font-face {
+    font-family: 'SpoqaHanSansNeo-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* reset */
+.a11y-hidden {
+clip: rect(1px, 1px, 1px, 1px);
+clip-path: inset(50%);
+width: 1px;
+height: 1px;
+margin: -1px;
+overflow: hidden;
+padding: 0;
+position: absolute;
+}
+
+h1,
+h2,
+h3,
+div,
+header,
+input,
+button,
+label,
+p,
+a,
+hr
+{
+    padding: 0;
+    margin: 0;
+    background: none;
+    border: 0;
+    color: inherit;
+    font-size: inherit;
+}
+
+a,
+input,
+button{
+    font-family: inherit;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover{
+    cursor: pointer;
+}
+
+.inp-hold::before{
+    cursor: pointer;
+}
+
+img{
+    vertical-align: top;
+}
+
+button:enabled {
+    cursor: pointer;
+  }
+
+/* css */
+
+body{
+    font-family:'spoqaHanSansNeo-Regular';
+    display: flex;
+    align-items: center;
+    height:100vh;
+}
+
+.login-modal{
+    border-radius: 10px;
+    border: 1px solid #C4C4C4;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+
+    margin: auto auto;
+}
+/* 헤더 */
+.header{
+    display: flex;
+    margin: 20px 22px 18px 188px;
+    align-items: center;
+    position: relative;
+}
+
+h1{
+    font-size: 16px;
+}
+
+.close{
+    background-image: url(./images/close.png);
+    background-size: cover;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: 0;
+}
+
+/* 메인 */
+.main{
+    border-top: 1px solid #C4C4C4;
+    padding: 26px 24px 25px 24px;
+}
+
+h2{
+    font-size: 20px;
+    padding-bottom: 24px;
+}
+
+.user-id,
+.input-info-con{
+    height: 50px;
+    width: 100%;
+    flex-shrink: 0;
+
+    border-radius: 5px;
+    border: 1px solid  #C4C4C4;
+    background: #FFF;
+    color: #767676;
+    box-sizing: border-box;
+}
+
+
+.user-password{
+    margin-top:  10px;
+}
+
+.input-info .uninput{
+    margin-top: 6px;
+    margin-left: 4px;
+    color : #F4492E;
+}
+
+.input-info input{
+    padding-left: 16px;
+}
+
+.user-id{
+    border: 2px solid #F4492E;
+}
+
+.txt-hide{
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    clip-path: inset(50%);
+}
+
+.inp-hold{
+    margin-top: 21px;
+}
+.label-hold{
+    position: relative;
+    margin-left: 30px;
+    color:#767676;
+}
+.label-hold::before{
+    display: inline-block;
+    content:"";
+    position: absolute;
+    background-image: url(./images/check-box.png);
+    background-repeat: no-repeat;
+    width: 22px;
+    height: 22px;
+    top:0px;
+    background-size: cover;
+    left:-30px;
+}
+
+.label-hold::after{
+    content:"";
+    position: absolute;
+    background: url(./images/check-box-blue.png) 0 0 /22px no-repeat;
+    width: 22px;
+    height: 22px;
+    background-size: cover;
+    left:-30px;
+    top:0px;
+    opacity: 0;
+}
+
+
+.inp-hold:checked+.label-hold::after {
+    opacity: 1;
+}
+
+
+
+.footer{
+    text-align: center;
+    font-size: 14px;
+    color:#767676;
+}
+
+.footer span{
+    margin: 0 12px;
+}
+
+hr {
+    border: none; 
+    border-top: 1px solid #C4C4C4;
+    text-align: center;
+    overflow: visible;
+    margin-top: 38px;
+}
+
+hr::after {
+    content: "또는";
+    position: relative;
+    top: -1em;
+    background-color: white;
+    padding: 0 13px;
+    color:#767676;
+    font-size: 14px;
+}
+
+
+/* 버튼 */
+[class^=btn]{
+    width: 472px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    font-size: 16px;
+    color:#767676;
+    box-sizing: border-box;
+}
+
+.btn-login{
+    background-color: #2F80ED;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 21px 0;
+}
+
+.btn-group{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    margin-top: 14px;
+    height: auto;
+}
+
+[class^="btn-login-"]{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: 1px solid #767676;
+}
+
+
+
+.btn-login-google{
+    background: url(./images/Google__G__Logo\ 1.png) no-repeat 12px 50% /28px 28px;
+}
+.btn-login-facebook{
+    border-color: #2D9CDB;
+    background: url(./images/facebook.png) no-repeat 12px 50% /28px 28px;
+}
+.btn-login-naver{
+    border-color: #00BF18;
+    background: url(./images/naver-logo.png) no-repeat 12px 50% /28px 28px;
+}
+.btn-login-kakao{
+    border-color: #F2C94C;
+    background: url(./images/message-circle.png) no-repeat 12px 50% /28px 28px;
+}
