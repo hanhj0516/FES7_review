@@ -275,3 +275,10 @@ hr::after {
     border-color: #F2C94C;
     background: url(./images/message-circle.png) no-repeat 12px 50% /28px 28px;
 }
+
+/* .btn-login-kakao2{
+    border-color: #F2C94C;
+    background: url(./images/css_sprites.png); background-repeat: no-repeat ;
+    background-size: 84px;
+    background-position: ;
+} */
