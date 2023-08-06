@@ -258,6 +258,17 @@ hr::after {
     border: 1px solid #767676;
 }
 
+/* [class^="btn-login-"]::before{
+    display: block;
+    content: "";
+    width: 28px;
+    height: 28px;
+    justify-content: left;
+    margin: 12px;
+    float: left;
+    background-color: #2F80ED;
+} */
+
 
 
 .btn-login-google{
@@ -276,9 +287,3 @@ hr::after {
     background: url(./images/message-circle.png) no-repeat 12px 50% /28px 28px;
 }
 
-/* .btn-login-kakao2{
-    border-color: #F2C94C;
-    background: url(./images/css_sprites.png); background-repeat: no-repeat ;
-    background-size: 84px;
-    background-position: ;
-} */
