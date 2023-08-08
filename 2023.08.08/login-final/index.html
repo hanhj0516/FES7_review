@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel='stylesheet' href="login.css">
+</head>
+<body>
+    
+<div class="login-modal">
+    <h1 class="a11y-hidden">위니브 로그인 또는 회원가입 모달</h1>
+        <header class="header">
+            <h2>로그인 또는 회원가입</h2>
+            <h3 class="a11y-hidden">로그인 또는 회원가입</h3>
+        </header>
+        
+        <main class="main">
+            <h3>위니브에서 여러분의 궁금증을 해결하세요! :)</h3>
+            <form class="input-info">
+                <input type="text" id="user-id" class="input-info-con user-id" placeholder="아이디">
+                <label for="user-id" class="a11y-hidden">아이디</label>
+                <p class="uninput">아이디를 입력해 주세요.</p>
+                <input type="password" id="user-password" class="input-info-con user-password" placeholder="비밀번호">
+                <label for="user-password" class="a11y-hidden">비밀번호</label>
+                <p class="uninput">아이디 혹은 비밀번호과 일치하지 않습니다.</p>
+            </form>
+
+            <div class="inp-hold">
+                <input type="checkbox" id="inp-hold" class="inp-hold txt-hide">
+                <label for="inp-hold" class="label-hold">로그인 상태 유지</label>
+            </div>
+
+            <button type="submit" class="btn-login">로그인</button>
+
+            <p class="login-footer"><a href="" >회원가입</a>
+                <span>|</span>
+                <a href="">아이디/비밀번호 찾기</a>
+            </p>
+
+            <hr>
+
+            <h3 class="a11y-hidden">소셜로그인</h3>
+
+            <ul class="sns-btn-group">
+                <li><a href="https://www.google.com/" class="btn-sns-login-google">구글 계정으로 로그인</a></li>
+                <li><a href="https://www.google.com/" class="btn-sns-login-facebook">페이스북 계정으로 로그인</a></li>
+                <li><a href="https://www.google.com/" class="btn-sns-login-naver">네이버 계정으로 로그인</a></li>
+                <li><a href="https://www.google.com/" class="btn-sns-login-kakao">카카오톡 계정으로 로그인</a></li>
+            </ul>
+        </main>
+        <button type="button" class="close"></button>
+</div>
+</body>
+</html>

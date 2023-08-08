@@ -1,0 +1,297 @@
+@font-face {
+    font-family: 'SpoqaHanSansNeo-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* reset */
+.a11y-hidden {
+clip: rect(1px, 1px, 1px, 1px);
+clip-path: inset(50%);
+width: 1px;
+height: 1px;
+margin: -1px;
+overflow: hidden;
+padding: 0;
+position: absolute;
+}
+
+h1,
+h2,
+h3,
+div,
+header,
+input,
+button,
+label,
+p,
+a,
+hr,
+ul,li
+{
+    padding: 0;
+    margin: 0;
+    background: none;
+    border: 0;
+    color: inherit;
+    font-size: inherit;
+}
+
+a,
+input,
+button{
+    font-family: inherit;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,li{
+    list-style: none;
+}
+
+a:hover{
+    cursor: pointer;
+}
+
+.inp-hold::before{
+    cursor: pointer;
+}
+
+img{
+    vertical-align: top;
+}
+
+button:enabled {
+    cursor: pointer;
+  }
+
+/* css */
+
+body{
+    font-family:'spoqaHanSansNeo-Regular';
+    display: flex;
+    align-items: center;
+    height:100vh;
+}
+
+.login-modal{
+    border-radius: 10px;
+    border: 1px solid #C4C4C4;
+    background-color: white;
+    margin: auto auto;
+    width: 520px;
+    position: relative;
+}
+/* 헤더 */
+.header{
+    display: flex;
+    
+}
+
+h2{
+    font-size: 16px;
+    padding: 20px ;
+    margin: auto;
+}
+
+
+
+/* 메인 */
+.main{
+    border-top: 1px solid #C4C4C4;
+    padding: 26px 24px 25px 24px;
+}
+
+main>h3{
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 24px;
+}
+
+.user-id,
+.input-info-con{
+    height: 50px;
+    width: 100%;
+    flex-shrink: 0;
+
+    border-radius: 5px;
+    border: 1px solid  #C4C4C4;
+    background: #FFF;
+    color: #767676;
+    box-sizing: border-box;
+}
+
+.user-password{
+    margin-top:  10px;
+}
+
+.input-info .uninput{
+    margin-top: 6px;
+    margin-left: 4px;
+    color : #F4492E;
+}
+
+.input-info input{
+    padding-left: 16px;
+}
+
+.user-id{
+    border: 2px solid #F4492E;
+}
+
+.txt-hide{
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    clip-path: inset(50%);
+}
+
+.inp-hold{
+    margin-top: 21px;
+}
+.label-hold{
+    position: relative;
+    margin-left: 30px;
+    color:#767676;
+}
+.label-hold::before{
+    display: inline-block;
+    content:"";
+    position: absolute;
+    background-image: url(./images/check-box.png);
+    background-repeat: no-repeat;
+    width: 22px;
+    height: 22px;
+    top:0px;
+    background-size: cover;
+    left:-30px;
+}
+
+.label-hold::after{
+    content:"";
+    position: absolute;
+    background: url(./images/check-box-blue.png) 0 0 /22px no-repeat;
+    width: 22px;
+    height: 22px;
+    background-size: cover;
+    left:-30px;
+    top:0px;
+    opacity: 0;
+}
+
+.inp-hold:checked+.label-hold::after {
+    opacity: 1;
+}
+
+.login-footer{
+    text-align: center;
+    font-size: 14px;
+    color:#767676;
+}
+
+.login-footer span{
+    margin: 0 12px;
+}
+
+hr {
+    border: none; 
+    border-top: 1px solid #C4C4C4;
+    text-align: center;
+    overflow: visible;
+    margin-top: 38px;
+}
+
+hr::after {
+    content: "또는";
+    position: relative;
+    top: -1em;
+    background-color: white;
+    padding: 0 13px;
+    color:#767676;
+    font-size: 14px;
+}
+
+/* 버튼 */
+[class^=btn]{
+    border-radius: 5px;
+    font-size: 16px;
+    color:#767676;
+    box-sizing: border-box;
+    padding: 15px 0;
+}
+
+.btn-login{
+    background-color: #2F80ED;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 21px 0;
+    width: 100%;
+}
+
+[class^="btn-sns"]{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: 1px solid #767676;
+    margin-top: 10px;
+}
+
+.sns-btn-group li{
+    position: relative;
+}
+
+ul a[class^="btn-sns"]::before{
+    content: "";
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    left: 12px;
+    background-image: url(./images/small/css_sprites03.png); 
+    background-repeat: no-repeat;
+    background-size: 96px;
+}
+
+.btn-sns-login-google::before{
+    background-position: -58px -10px;
+}
+
+.btn-sns-login-facebook{
+    border-color: #2D9CDB;
+}
+.btn-sns-login-facebook::before{
+    background-position: -10px -10px ;
+}
+
+
+.btn-sns-login-naver{
+    border-color: #00BF18;
+}
+.btn-sns-login-naver::before{
+    background-position: -58px -58px ;
+}
+
+
+.btn-sns-login-kakao{
+    border-color: #F2C94C;
+}
+.btn-sns-login-kakao::before{
+    background-position: -10px -58px ;
+}
+
+.close{
+    background-image: url(./images/close.png);
+    background-size: 16px;
+    background-repeat: no-repeat;
+    position: absolute;
+    background-position: 50%;
+    right: 5px;
+    top:0;
+    padding: 29px;
+    
+}
