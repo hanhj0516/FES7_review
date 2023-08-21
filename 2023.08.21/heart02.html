@@ -43,9 +43,14 @@
         
         btnHeart.forEach(function(element,index){
             btnHeart[index].addEventListener('click',function(){
+                //btnHeart의 0인덱스부터 순회하면서 click했을 때 뒤 function 이벤트 발생
                 btnHeart[0].classList.toggle('on');
+                // 그 funcrtion 이벤트는 btnHeart의 0인덱스인 첫번째 패스에 on class가 없다면 추가, 있다면 삭제해주는 toggle
             });
         })
+        
+        //
+
 
              // const btnHeart = document.querySelector('.btn-heart');
         // const btnPath = document.querySelectorAll('.btn-heart svg path');
