@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <script>
+        class Person {
+        constructor(name, age, fat) {
+          this.name = name;
+          this.age = age;
+          this.fat = fat;
+        }
+
+        eating(food) {
+          food.fatup(this.fat);
+          console.log(this.fat);
+          console.log(
+            `${this.name}의 돼지력이 ${food.food}에 의해서 ${food.cal}이 되었습니다.`
+          );
+        }
+      }
+
+      class Chicken {
+        constructor(food) {
+          this.food = food;
+          // this.fat = 2;
+        }
+
+        fatup(cal) {
+          this.cal = cal + 1;
+        }
+      }
+
+      const 한혜지 = new Person("한혜지", 28, 1);
+      const 치킨 = new Chicken("치킨");
+
+      한혜지.eating(치킨);
+
+    </script>
+</body>
+</html>

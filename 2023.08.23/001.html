@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <script>
+        const hj = {
+            name : '혜지',
+            address : '서울',
+            eating : function(foods){
+                foods.fatup();
+            }
+        }
+
+        const chicken = {
+            fat : 2,
+            fatup : function(){
+                this.fat++;
+            }
+        }
+
+        hj.eating(chicken);
+
+        //객체를 생성자 함수를 통해서 생성해보기
+
+        function Hj(){
+            this.name = '혜지';
+            this.address = '서울';
+        }
+
+        Hj.prototype,eating = function(foods){
+                foods.fatup();
+            }
+
+            function Chicken(){
+                this.fat = 2;
+            }
+
+            Chicken.prototype.fatup = function(){
+                this.fat++;
+            }
+        
+
+            //class로 바꾸기
+
+            class Person {
+                constructor(name,age,fat){
+                    this.이름 = name;
+                    this.나이 = age;
+                    this.돼지력 = fat;
+                }
+
+                eating(food){
+                    fatup();
+                    console.log(`${this.이름}의 돼지력이 ${food}에 의해서 ${this.돼지력}이 되었습니다.`)
+                }
+            }
+
+            let 한혜지 = new Person('한혜지',28,1);
+
+            class Chicken {
+                constructor(){
+                    this.fat = 2;
+                }
+
+                fatup(){
+                    this.fat+=2;
+                }
+            }
+
+            let 치킨 = new Chicken();
+
+
+
+
+
+            
+
+    </script>
+</body>
+</html>
