@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <script>
+            class Person {
+                constructor(name,fat,happy){
+                    this.이름 = name;
+                    this.돼지력 = fat;
+                    this.포만감 = happy;
+                }
+
+                eating(food){
+                    this.돼지력 += food.fat;
+                    this.포만감 ++;
+                    console.log(`${food.name}에 의해서 ${this.이름}의 돼지력이  ${this.돼지력}, 포만감이 ${this.포만감}이 되었습니다.`)
+                }
+
+            }
+
+            class Food {
+                constructor(name,fat){
+                    this.name = name;
+                    this.fat = fat;
+                }
+            }
+
+            const person1 = new Person("한혜지",1,1);
+            const chicken = new Food("치킨",2);
+            const salad = new Food("샐러드",-1)
+
+            person1.eating(chicken);
+            person1.eating(salad);
+
+
+    </script>
+</body>
+</html>
