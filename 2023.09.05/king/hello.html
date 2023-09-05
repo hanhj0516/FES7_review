@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  .a11y-hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  }
+</style>
+<body>
+    <button id="greetButton">인사하기</button>
+    <div id="greeting"> <!-- 인사말이 여기에 표시됩니다. --> </div>
+    <script>
+        // 사용자가 버튼을 클릭하면, 인사말이 표시된 영역에 "안녕하세요!"라는 텍스트가 나타나야 합니다.
+        const greetBtn = document.querySelector('#greetButton');
+        const greethi = document.querySelector('#greeting');
+
+        greetBtn.addEventListener('click', 
+        ()=>{greethi.innerHTML=`안녕하세요!`;
+          greethi.classList.toggle('a11y-hidden');});
+
+    </script>
+</body>
+</html>
