@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        #canvas {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+  <canvas id="canvas" width="400" height="400"></canvas>
+
+  <script>
+      const canvas = document.getElementById('canvas');
+      const ctx = canvas.getContext('2d');
+      //L
+      ctx.beginPath();
+      ctx.strokeStyle = 'gold';
+      ctx.lineWidth = 10;
+      ctx.moveTo(30,30);
+      ctx.lineTo(30,100);
+      ctx.stroke();
+
+      ctx.beginPath();
+      ctx.strokeStyle = 'gold';
+      ctx.lineWidth = 10;
+      ctx.moveTo(30,95);
+      ctx.lineTo(80,95);
+      ctx.stroke();
+
+      //I
+      ctx.beginPath();
+      ctx.strokeStyle = 'gold';
+      ctx.lineWidth = 10;
+      ctx.moveTo(120,30);
+      ctx.lineTo(120,100);
+      ctx.stroke();
+
+      //O
+      ctx.beginPath();
+      ctx.strokeStyle = 'pink'
+      ctx.lineWidth = 10;
+      ctx.arc(200, 65, 35, 0, Math.PI * 2);
+      ctx.stroke();
+
+      //N
+      ctx.beginPath();
+      ctx.strokeStyle = 'gold';
+      ctx.lineWidth = 10;
+      ctx.moveTo(280,30);
+      ctx.lineTo(280,100);
+      ctx.stroke();
+      
+      ctx.beginPath();
+      ctx.strokeStyle = 'gold';
+      ctx.lineWidth = 10;
+      ctx.moveTo(280,32);
+      ctx.lineTo(330,97);
+      ctx.stroke();
+
+      ctx.beginPath();
+      ctx.strokeStyle = 'gold';
+      ctx.lineWidth = 10;
+      ctx.moveTo(330,100);
+      ctx.lineTo(330,30);
+      ctx.stroke();
+
+
+  </script>
+    
+</body>
+</html>
