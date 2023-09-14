@@ -42,12 +42,45 @@ myCar.drive();
 class Animal {
   constructor(name){
     this.name = name;
-  }
+  };
     speak (){
       console.log('speak')
-  }
+  };
 }
 
+class Dog extends Animal{
+  constructor(name, breed) {
+  super(name);
+  this.breed = breed;
+};
+  speak (){
+    console.log('woof!')
+  };
+}
+
+class Cat extends Animal{
+  constructor(name, color) {
+  super(name);
+    this.color = color;
+};
+  speak (){
+    console.log('Meow!')
+  };
+}
+
+const 동물 = new Animal('동물');
+동물.name ;
+동물.speak();
+
+const 강아지 = new Dog('구름','말티즈');
+강아지.breed ; 
+강아지.name ;
+강아지.speak() ;
+
+const 고양이 = new Cat('나비','삼색');
+고양이.color ;
+고양이.name ;
+고양이.speak();
 
 
 // 문제: 은행 계좌 클래스문제 풀이
