@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        div{
+            margin: 0;
+            padding: 0;
+        }
+        .star {
+            height: 30px;
+            width: 30px;
+            background-color: gold;
+            display: grid;
+            grid-template-areas:
+            "a b"
+            "c d";
+        }
+        .star > div{
+            height: 100%;
+            width: 100%;
+            background-color: blue;
+        }
+        .a {
+            grid-area: a;
+            border-radius: 0 0 30px 0;
+        }
+        .b {
+            grid-area: b;
+            border-radius: 0 0 0 30px;
+        }
+        .c {
+            grid-area: c;
+            border-radius: 0 30px 0 0;
+        }
+        .d {
+            grid-area: d;
+            border-radius: 30px 0 0 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="eye-star">
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="c"></div>
+        <div class="d"></div>
+    </div>
+</body>
+</html>

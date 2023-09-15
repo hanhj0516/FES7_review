@@ -64,6 +64,12 @@ body{
 }
 
 header h1 {
+    width: 156px;
+}
+
+.header .login-text {
+    display: flex;
+    gap : 8px;
 }
 
 .btn-join{
