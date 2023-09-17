@@ -5,7 +5,8 @@ export const StyledHeader = styled.header`
   img{
     width : 564px;
     object-fit: contain ; 
-    
+    margin-left : auto ;
+    margin-right : auto ;
   }
   display : flex;
   background-image : url(${Clock});
@@ -13,6 +14,5 @@ export const StyledHeader = styled.header`
   background-repeat : no-repeat ; 
   background-position : center ;
   height : 265px;
-  justify-content : center ; 
   margin-top : 120px ;
 `
