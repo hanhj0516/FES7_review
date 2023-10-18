@@ -1,0 +1,127 @@
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff')
+    format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Pretendard-Bold';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff')
+    format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+body{
+  background-color: gray;
+}
+
+button{
+  border: 0;
+  background: none;
+  font-family: inherit;
+  font-size: inherit;
+  margin: 0;
+  padding: 0;
+  color: inherit;
+}
+
+a{
+  color : inherit;
+  text-decoration: none;
+}
+
+ul{
+  list-style-type: none;
+}
+
+
+.page{
+  background-color: #FF6875;
+  height: 844px;
+  width: 390px;
+  /* display: flex; */
+  justify-content: center;
+  font-family: Pretendard-Regular;
+}
+
+.slogan{
+  padding-top: 206px;
+  text-align: center;
+}
+
+.oguogu-logo{
+  width: 238px;
+
+}
+
+.slogan-text{
+  color : white ;
+  font-size: 14px;
+  text-align: center;
+  margin: 0;
+}
+
+.login-modal{
+  color: #767676;
+  font-size: 12px;
+  background-color: white;
+  height: 362px;
+  margin-top: 188px;
+  border-radius: 20px 20px 0 0;
+}
+
+.sns-login{
+  padding: 50px 34px;
+  margin: 0;
+}
+
+.sns-login li{
+  width: 322px;
+  height: 44px;
+  border-radius: 44px;
+  border-style: solid;
+  border-width: 1px;
+  margin-bottom: 10px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+
+  font-size: 14px;
+  background-repeat: no-repeat;
+  background-position: 14px ;
+}
+
+.kakao-login {
+  border-color: #F2C94C;
+  background-image: url(./img/kakao_icon.png);
+  background-size: 24px;
+}
+.google-login {
+  border-color: #767676;
+  background-image: url(./img/Google_icon.png);
+  background-size: 24px;
+}
+.facebook-login {
+  border-color: #2D9CDB;
+  background-image: url(./img/facebook_icon.png);
+  background-size: 24px;
+}
+.email-login {
+  border-color: #FF6875;
+  background-image: url(./img/5959_icon.png);
+  background-size: 30px;
+}
+
+footer {
+  text-align: center;
+  padding-top: 10px;
+}
+
+footer span{
+  padding: 0 12px;
+}
